@@ -19,7 +19,7 @@ query Query {
   }
 `
 
-const bajoStock = () => {
+const BajoStock = () => {
 
     const {data, loading, error, startPolling, stopPolling} = useQuery(BAJO_STOCK);
     
@@ -75,4 +75,4 @@ const bajoStock = () => {
      );
 }
  
-export default bajoStock;
+export default BajoStock;

@@ -18,7 +18,7 @@ const OBTENER_PROVEEDORES = gql`
 
 `;
 
-const nuevaCompra = () => {
+const NuevaCompra = () => {
 
     const { data, loading, error } = useQuery(OBTENER_PROVEEDORES);
    if(loading) return 'Cargando..'
@@ -76,4 +76,4 @@ const nuevaCompra = () => {
   )
 }
 
-export default nuevaCompra
+export default NuevaCompra
