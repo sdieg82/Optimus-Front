@@ -67,12 +67,11 @@ const NuevoProducto = () => {
     const [provider, setProvider ] = useState(undefined);
     const [mensaje, guardarMensaje] = useState(null);
     const  { loading, error, data }=  useQuery(OBTENER_PROVEEDORES);
-    console.log(loading)
-    
-    
+    let obtenerProveedores;
 
-    
-    const {obtenerProveedores}=data;
+    useEffect(() => {
+        obtenerProveedores = data.obtenerProveedores    
+    }, [data])
     
      
     
